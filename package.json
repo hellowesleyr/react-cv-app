@@ -8,7 +8,6 @@
     "start": "webpack serve --mode development",
     "build": "webpack",
     "watch": "jest --watch"
-  
   },
   "repository": {
     "type": "git",
@@ -23,7 +22,8 @@
   "homepage": "https://github.com/hellowesleyr/react-webpack#readme",
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "uniqid": "^5.4.0"
   },
   "devDependencies": {
     "@babel/core": "^7.18.13",

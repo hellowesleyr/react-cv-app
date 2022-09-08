@@ -1,7 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&family=Secular+One&display=swap');
 #app {
     color: blue;
 }
 
 h1 {
     color: blue
+}
+
+.header {
+    font-family: 'Fira Code', monospace; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    margin: 0;
+    background-color: #0891b2;
+    color: white;
+}
+.header>p{
+    font-size: 20px;
+    margin: 5px 10vw;
+    margin-left: -20vw;
+}
+
+.ColumnContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between stretch;
+    flex: auto;
+}
+
+.addExperienceBtn,.addEducationBtn {
+    color: white;
+    background-color: var(--addBtnColor);
+    border-radius: 5px;
+    border-style: none;
+}
+
+.addExperienceBtn:hover,.addEducationBtn:hover {
+    background-color: #4ade80;
+}
+
+.deleteExperienceBtn,.deleteEducationBtn {
+    color: white;
+    background-color: #be123c;
+    border-radius: 5px;
+    border-style: none;  
+}
+
+.deleteExperienceBtn:hover,.deleteEducationBtn:hover {
+    background-color: var(--deleteBtnHover);
+}
+
+.errorTextField,#experienceErrorText {
+    color: red;
+    font-size: 14px;
+    text-justify: center;
+    text-align: center;
+}
+
+.forms {
+    width: 40vw;
+}
+
+.inputSectionContainer {
+    background-color: var(--lightBackground);
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.CVPanel {
+    background-color: white;
+    border-radius: 10px;
+}
+
+.CVSection{
+    width: 60vw;
+}
+
+.historyItem {
+
+}
+
+.CV {
+    border-radius: 20px;
+    padding: 10px;
+    margin: 20px;
+    background-color: #0891b2;
+    position: sticky ;
+    top: 20px;
+}
+
+p {
+    margin: 5px;
+}
+
+.CVSectionMarker {
+    color: var(--solidTeal);
+    border-bottom: solid 1px var(--aboutBlue);
+    font-size: 18px;
+}
+
+.dynamicSectionMarker {
+    color: var(--solidTeal);
+    border-bottom: solid 1px var(--aboutBlue);
+    font-size: 18px;
+    margin-top:5px;
+}
+
+.CVTitle {
+    color:white;
+    text-align: center;
+    font-size: 18px;
+
+}
+
+.CVAbout {
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+
+:root {
+--aboutBlue: #0ea5e9;
+--solidTeal: #0891b2;
+--addBtnColor: #22c55e;
+--lightBackground: #e0f2fe;
+--deleteBtnColor: #be123c;
+--deleteBtnHover: #e11d48;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.formButton {
+    display: flex;
+    justify-content: center;
+    background-color: #0ea5e9;
+    border-style: none;
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+    margin: 0 5px;
+    color: white;
+    font-size: 16px;
+}
+
+.formButton:hover {
+    background-color: #38bdf8;
+}
+
+form {
+    /* margin: 20px; */
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center stretch;
+    background-color: #e0f2fe;
+}
+
+
+input {
+    border-style: none;
+    border-bottom: 1px grey solid;
+    padding: 2px;
+}
+
+form>input{
+    margin: 5px;
+}
+
+.aboutTitle {
+    color: var(--aboutBlue);
 }
